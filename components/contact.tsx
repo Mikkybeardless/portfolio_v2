@@ -14,17 +14,21 @@ export default function Contact() {
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setSubmitted(true);
     try {
-      const res = fetch("/api/contact-me", {
+      const res = await fetch("/api/contact-me", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(formData),
       });
+
+      if (!res.ok) {
+        throw new Error("Failed to submit form");
+      }
 
       setFormData({ name: "", email: "", message: "" });
     } catch (error) {
@@ -139,7 +143,8 @@ export default function Contact() {
         {/* CV Download */}
         <div className="mt-8 text-center">
           <a
-            href="/pdf/Igashi_fullStack.pdf"
+            href="/files/cv.pdf"
+            download
             className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors text-sm"
           >
             Download my CV
