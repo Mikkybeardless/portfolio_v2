@@ -3,12 +3,10 @@ import type { Metadata } from "next";
 
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
-// import { Analytics } from "@vercel/analytics/next";
 import { ThemeProvider } from "@/components/theme-provider";
 import "./globals.css";
 
 const geistSans = GeistSans;
-
 const geistMono = GeistMono;
 
 export const metadata: Metadata = {
@@ -18,19 +16,15 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: "/icon.jpg",
+        url: "/images/profile_light.jpg",
         media: "(prefers-color-scheme: light)",
       },
       {
-        url: "//icon.jpg",
+        url: "/images/profile_dark.jpg",
         media: "(prefers-color-scheme: dark)",
       },
-      {
-        url: "/icon.svg",
-        type: "image/svg+xml",
-      },
     ],
-    apple: "/apple-icon.png",
+    apple: "/images/profile_light.jpg",
   },
 };
 
