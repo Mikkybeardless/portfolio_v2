@@ -27,32 +27,21 @@ export const skills = [
 
 export const services = [
   {
-    label: "Building User Interfaces",
-    title: "UI/UX Design",
-    description:
-      "Creating intuitive and engaging digital solutions that put users first.",
-  },
-  {
     label: "Building Functional Solutions",
     title: "Web Development",
     description:
       "Full stack web applications with modern frameworks and best practices.",
   },
   {
-    label: "Maintaining Visual Identities",
-    title: "Branding",
+    label: "Building APIs and Services",
+    title: "Backend Development",
     description:
-      "Cohesive visual systems that communicate your unique brand story.",
+      "Developing robust and scalable server-side applications and APIs.",
   },
   {
     label: "Bringing Ideas Alive",
     title: "Animation Design",
     description: "Smooth, purposeful animations that enhance user engagement.",
-  },
-  {
-    label: "Creating User-Centered Products",
-    title: "Product Design",
-    description: "End-to-end product development from concept to launch.",
   },
 ];
 
