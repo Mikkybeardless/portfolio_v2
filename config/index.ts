@@ -103,7 +103,7 @@ export const projects = [
     description:
       "An app that creates short versions of long URLs for easy sharing.",
     tech: ["Node.js", "Express", "MongoDB"],
-    link: "https://short-clicks-frontend.vercel.app/",
+    link: "https://short-clicks.vercel.app/",
     image: {
       dark: "/images/url-shortener_dark.png",
       light: "/images/url-shortener_light.png",
