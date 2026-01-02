@@ -143,7 +143,7 @@ export default function Contact() {
         {/* CV Download */}
         <div className="mt-8 text-center">
           <a
-            href="/files/cv.pdf"
+            href="/files/Igashi_Michael_CV.pdf"
             download
             className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors text-sm"
           >
