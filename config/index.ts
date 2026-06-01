@@ -59,7 +59,7 @@ export const projects = [
     description:
       "A real estate rental platform for finding and renting properties easily.",
     tech: ["React.js", "Nextjs", "Nestjs", "PostgreSQL"],
-    link: "https://ezyrent-web.vercel.app",
+    link: "https://www.ezyrent.org/",
     image: {
       dark: "/images/ezyrent_dark.png",
       light: "/images/ezyrent_light.png",
