@@ -29,13 +29,13 @@ export default function Projects() {
               Your Inspiration
             </AnimatedHeading>
           </div>
-          <button
+          {/* <button
             onClick={() => setShowMore(!showMore)}
             className="hidden md:inline-flex items-center gap-2 border border-primary text-primary px-5 py-2 rounded-full text-sm hover:bg-primary hover:text-primary-foreground transition-all"
           >
             {showMore ? "Show Less" : "Explore more Projects"}
             <ArrowRight size={16} />
-          </button>
+          </button> */}
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -87,7 +87,7 @@ export default function Projects() {
         </div>
 
         {/* Mobile explore button */}
-        <div className="md:hidden mt-8 text-center">
+        <div className=" mt-8 text-center">
           <button
             onClick={() => setShowMore(!showMore)}
             className="inline-flex items-center gap-2 border border-primary text-primary px-5 py-2 rounded-full text-sm"
